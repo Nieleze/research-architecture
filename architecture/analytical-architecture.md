@@ -110,7 +110,6 @@ Nieleze applies elements of the architecture through named assessments and metho
 - Structural Risk Snapshot
 - Organizational Sensing Assessment
 - Organizational Coherence Map
-- Operational Coherence Map Methodology
 
 These are applications of the analytical architecture rather than separate analytical layers.
 
