@@ -1,0 +1,13 @@
+id="3kq7vx"
+stage,mechanism,question,possible_degradation,consequence,related_nieleze_concept
+Sensing,Signal detection,"What is being noticed?","Weak signals remain unseen or are filtered out.","Emerging conditions remain outside organizational awareness.","Organizational Sensing"
+Sensing,Signal suppression,"What is being missed?","Signals are weakened, absorbed, normalized, or prevented from reaching decision-makers.","Important conditions fail to enter the decision process.","Signal Suppression Dynamics"
+Recognition,Detection vs recognition,"Has the significance of the signal been recognized?","A signal is detected but its significance is not understood.","Awareness exists without meaningful response.","Detection vs Recognition Failure"
+Interpretation,Interpretive bottleneck,"What does the signal mean?","Ambiguity, cognitive load, fragmentation, or competing interpretations constrain understanding.","Organizations cannot reliably determine what action is warranted.","Interpretive Bottlenecks"
+Interpretation,Interpretive fragmentation,"Can the organization construct a coherent interpretation?","Different actors hold incomplete or conflicting interpretations.","Shared understanding breaks down.","Interpretive Fragmentation"
+Escalation,Escalation threshold drift,"When does the signal become actionable?","Thresholds for escalation shift as conditions evolve.","Action is delayed even as risk increases.","Escalation Threshold Drift"
+Decision,Decision compression,"Can the organization deliberate adequately before acting?","Time pressure or information overload compresses decision processes.","Decisions become narrower, delayed, or overly dependent on simplified signals.","Decision Compression"
+Intervention,Risk visibility horizon,"How much time remains to intervene?","The organization recognizes the condition only after the effective intervention window has narrowed.","Available intervention options diminish.","Risk Visibility Horizons"
+Intervention,Barrier integrity,"Will existing safeguards contain the condition?","Protective barriers weaken, interact unexpectedly, or fail to activate.","Local disturbances can become systemic failures.","Barrier Integrity Architecture"
+Recovery,Recovery window,"Can the system still recover?","Recognition or intervention occurs after recoverability has materially degraded.","Failure becomes harder or more costly to contain.","Recovery Window Dynamics"
+Learning,Organizational learning,"Does the organization convert experience into structural change?","Lessons are not retained, translated, or incorporated into future practice.","The same structural vulnerabilities can recur.","Organizational Learning"
