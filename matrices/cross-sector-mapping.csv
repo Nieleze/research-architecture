@@ -1,0 +1,16 @@
+domain,analytical_layer,structural_mechanism,what_it_reveals,source
+Healthcare Systems,Organizational Sensing,Signal suppression,"What signals are being missed, weakened, or absorbed?",https://www.nieleze.com/healthcare-systems
+Healthcare Systems,Intervention Architecture,Escalation and intervention delay,"Why does intervention arrive too late?",https://www.nieleze.com/healthcare-systems
+Healthcare Systems,Resilience & Adaptation,Organizational learning,"How does the system adapt after failure or near failure?",https://www.nieleze.com/healthcare-systems
+Finance & Decision Systems,Organizational Sensing,Signal amplification,"How can signals become amplified across interconnected systems?",https://www.nieleze.com/finance-decision-systems
+Finance & Decision Systems,Failure Dynamics,Propagation and anticipation,"How can local conditions propagate into broader systemic consequences?",https://www.nieleze.com/finance-decision-systems
+Finance & Decision Systems,Intervention Architecture,Anticipatory risk,"How early can meaningful intervention occur?",https://www.nieleze.com/finance-decision-systems
+Aviation & Aerospace Safety,Trust & Oversight,Human-machine trust calibration,"How does trust affect interpretation, supervision, and action?",https://www.nieleze.com/aviation-aerospace-safety
+Aviation & Aerospace Safety,Organizational Sensing,Interpretive capacity,"Can emerging conditions be recognized before operational failure?",https://www.nieleze.com/aviation-aerospace-safety
+Aviation & Aerospace Safety,Intervention Architecture,Anticipation,"Can action occur while meaningful intervention remains possible?",https://www.nieleze.com/aviation-aerospace-safety
+Robotics & Automation Oversight,Trust & Oversight,Human-machine boundary management,"Where does responsibility, supervision, or interpretation degrade?",https://www.nieleze.com/robotics-automation-oversight
+Robotics & Automation Oversight,Interpretation,Interpretability,"Can automated-system signals be meaningfully understood under operational conditions?",https://www.nieleze.com/robotics-automation-oversight
+Robotics & Automation Oversight,Trust & Oversight,Supervision drift,"How does human oversight change as automation increases?",https://www.nieleze.com/robotics-automation-oversight
+Nuclear & High-Reliability Systems,Failure Dynamics,Safeguard interaction,"How do multiple safeguards interact under stress?",https://www.nieleze.com/nuclear-high-reliability-systems
+Nuclear & High-Reliability Systems,Resilience & Adaptation,Redundancy,"How does redundancy contribute to continued system resilience?",https://www.nieleze.com/nuclear-high-reliability-systems
+Nuclear & High-Reliability Systems,Trust & Oversight,Governance durability,"How durable are oversight and governance mechanisms under prolonged stress?",https://www.nieleze.com/nuclear-high-reliability-systems
