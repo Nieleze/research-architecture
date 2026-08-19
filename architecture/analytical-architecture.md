@@ -1,787 +1,485 @@
-# Analytical Architecture
+# Nieleze Assessment Schema
 
 ## Purpose
 
-This document defines the analytical architecture represented by the Nieleze research artifact.
+This document defines how the Structural Risk Intelligence architecture is applied through structured assessments.
 
-**Structural Risk Intelligence is the study of how organizations detect, interpret, escalate, and act on emerging conditions before visible failure.**
+Assessments are applications of the broader research architecture. They do not constitute separate theoretical systems.
 
-**Nieleze is the research and publication platform through which this body of work is developed, published, and applied.**
+The assessment layer translates the architecture into structured examination of how organizations:
 
-The repository is a structured research representation of the concepts, mechanisms, relationships, domains, assessments, and provenance underlying that architecture. It is designed to make the architecture inspectable, traceable, and machine-readable without requiring the repository to reproduce the full substantive corpus published on Nieleze.com.
+- detect emerging conditions
+- interpret signals
+- escalate concerns
+- make decisions
+- intervene
+- contain or experience failure
+- recover
+- learn and adapt
 
-The repository is not a duplicate website and is not intended to reproduce the complete Nieleze publication layer.
+The underlying analytical question is:
 
-The architecture has three complementary surfaces:
-
-1. **Nieleze.com** — authoritative substantive publication layer.
-2. **GitHub research architecture** — versioned, machine-readable research artifact.
-3. **Nieleze Structural Lens** — interactive interpretation and discovery layer over the structured artifact.
-
-The Lens is a projection of the research artifact rather than an independent research corpus.
+> **How do organizations detect, interpret, escalate, and act on emerging conditions before visible failure?**
 
 ---
 
-## Conceptual anchor
+## Assessment logic
 
-Structural Risk Intelligence provides the common analytical spine for the research architecture.
+The reference assessment pathway is:
 
-Its central concern is the organizational pathway from emerging condition to visible consequence:
+    Condition
+        ↓
+    Signal
+        ↓
+    Recognition
+        ↓
+    Interpretation
+        ↓
+    Escalation
+        ↓
+    Decision
+        ↓
+    Intervention
+        ↓
+    Outcome
+        ↓
+    Recovery / Learning
 
-    detect
-       ↓
-    interpret
-       ↓
-    escalate
-       ↓
-    act
-       ↓
-    before visible failure
+This is a reference structure, not a deterministic sequence.
 
-This pathway is not treated as a deterministic sequence.
+Conditions may influence multiple stages simultaneously.
 
-Conditions can be:
+Signals may be:
 
-- missed
+- absent
+- weak
 - suppressed
+- fragmented
 - misrecognized
 - ambiguously interpreted
-- fragmented across organizational boundaries
-- delayed at escalation thresholds
-- compressed during decision-making
-- encountered after intervention capacity has narrowed
-- contained by effective barriers
-- allowed to propagate through failed barriers
-- converted into organizational learning
-- repeated when learning does not become adaptation
+- delayed in escalation
+- acted upon after intervention capacity has narrowed
 
-The architecture therefore studies not only failure itself, but the structural conditions that determine whether emerging conditions become visible, actionable, containable, recoverable, or recurrent.
+Feedback may also operate from later stages back into earlier stages.
+
+For this reason, assessment outputs should identify structural relationships and constraints rather than assume simple linear causality.
 
 ---
 
-## Architectural principle
+# Assessment applications
 
-The system is organized around the distinction between:
+## 1. Structural Risk Snapshot
 
-- **what exists in the research vocabulary**
-- **how mechanisms operate**
-- **where mechanisms are observed or applied**
-- **how mechanisms relate across contexts**
-- **how claims and mappings are sourced**
-- **how users navigate the architecture**
+### Purpose
 
-The repository therefore separates:
+The Structural Risk Snapshot is a focused assessment of emerging-risk visibility and structural exposure.
 
-- ontology
-- mechanisms
-- cross-sector mappings
-- assessments
-- provenance
-- architectural interpretation
-- Lens-facing structures
+It is intended to provide an early view of where an organization may be losing visibility, interpretive capacity, intervention time, or recovery capacity before visible failure occurs.
 
-These layers should remain linked through stable identifiers rather than duplicated names or free-text references.
+### Core questions
 
----
+- What emerging conditions are present?
+- What signals are visible?
+- What signals may be weak, suppressed, or overlooked?
+- Where does detection differ from recognition?
+- How are signals being interpreted?
+- Where may escalation thresholds be drifting?
+- How much intervention time remains?
+- Which barriers may contain or amplify the condition?
+- What structural conditions may allow risk to accumulate?
+- What recovery or adaptation capacity remains?
 
-## Core entities
+### Primary mechanisms
 
-### Concepts
+- `mechanism-001` — Signal Detection
+- `mechanism-002` — Signal Suppression
+- `mechanism-003` — Detection vs Recognition
+- `mechanism-006` — Escalation Threshold Drift
+- `mechanism-008` — Risk Visibility Horizon
+- `mechanism-009` — Barrier Integrity
+- `mechanism-010` — Recovery Window
 
-Concepts are named analytical entities in the Structural Risk Intelligence vocabulary.
+### Primary analytical layers
 
-Each canonical concept has a stable identifier in:
+- Organizational Sensing
+- Interpretation
+- Escalation
+- Intervention Architecture
+- Failure Dynamics
+- Resilience & Adaptation
 
-`ontology/concepts.csv`
+### Output
 
-Concept identifiers must remain stable even if the human-readable label, description, or publication location changes.
+The Structural Risk Snapshot should identify:
 
-A concept may represent:
-
-- a framework
-- a core concept
-- a structural concept
-- a methodology
-- an assessment construct
-- another explicitly recognized analytical entity
-
-Concepts should not be created merely because a phrase appears in a publication.
-
-A recurring term becomes a canonical concept only when it has a defensible role in the research architecture.
-
----
-
-### Mechanisms
-
-Mechanisms describe processes through which organizational or systemic conditions change, propagate, degrade, constrain, amplify, contain, or feed back into one another.
-
-Canonical mechanisms are represented in:
-
-`mechanisms/signal-to-decision.csv`
-
-Each mechanism has:
-
-- stable ID
-- macro stage
-- pathway position
-- mechanism class
-- input state
-- output state
-- primary concept
-- secondary concepts
-- Lens territories
-- structural role
-- provenance
-
-Mechanisms are not merely topics.
-
-They are structural processes.
+1. visible and potentially invisible conditions;
+2. relevant signals;
+3. potential suppression or recognition gaps;
+4. escalation constraints;
+5. remaining intervention space;
+6. barrier or containment conditions;
+7. recovery capacity;
+8. areas requiring deeper investigation.
 
 ---
 
-## Signal-to-decision pathway
+# 2. Organizational Sensing Assessment
 
-The signal-to-decision architecture provides a reference pathway through which emerging conditions can move toward organizational action and recovery.
+## Purpose
 
-The current pathway is:
+The Organizational Sensing Assessment examines how an organization detects, recognizes, interprets, escalates, and responds to emerging conditions.
 
-1. Sensing
-2. Recognition
-3. Interpretation
-4. Escalation
-5. Decision
-6. Intervention
-7. Recovery
-8. Learning
+It asks not simply whether information exists, but whether the organization can convert meaningful signals into timely understanding and action.
 
-The pathway is not assumed to be strictly linear.
+## Assessment dimensions
 
-Multiple mechanisms may operate within the same stage, and mechanisms may:
+### Sensing
 
-- branch
-- interact
-- bypass stages
-- suppress downstream visibility
-- compress decision time
-- reduce recoverability
-- feed back into earlier stages
+**Core question:**
 
-`stage_order` therefore represents macro-stage position.
+> What are we noticing, and what are we missing?
 
-`path_position` represents the mechanism's current position in the reference pathway.
+Relevant mechanisms:
 
-Neither field should be interpreted as proof that real-world systems always operate in a single deterministic sequence.
+- `mechanism-001` — Signal Detection
+- `mechanism-002` — Signal Suppression
+
+Relevant concepts:
+
+- `concept-009` — Organizational Sensing Modes
+- `concept-010` — Signal Suppression Dynamics
 
 ---
 
-## Mechanism classes
+### Recognition
 
-Mechanism classes describe the primary structural behavior of a mechanism.
+**Core question:**
 
-Current classes include:
+> Has the significance of the signal been recognized?
 
-- detection
-- degradation
-- recognition
-- interpretive-constraint
-- interpretive-fragmentation
-- threshold-drift
-- decision-compression
-- temporal-window
-- containment
-- recovery-capacity
-- feedback
+Relevant mechanism:
 
-Additional mechanism classes may be introduced when analytically justified.
+- `mechanism-003` — Detection vs Recognition
 
-Mechanism classes should describe structural behavior rather than sector-specific language.
+Relevant concepts:
+
+- `concept-002` — Signal-to-Decision Gap
+- `concept-009` — Organizational Sensing Modes
+- `concept-006` — Structural Clarity
 
 ---
-
-## Structural roles
-
-`structural_role` describes how a mechanism functions in relation to organizational conditions.
-
-Examples include:
-
-- initiates
-- degrades
-- transforms
-- constrains
-- fragments
-- delays
-- compresses
-- narrows
-- contains-or-fails
-- determines
-- feeds-back
-
-Structural role is distinct from mechanism class.
-
-A mechanism class answers:
-
-> What kind of mechanism is this?
-
-A structural role answers:
-
-> What does it do in the architecture?
-
----
-
-## Domains
-
-Domains are application contexts, not separate theoretical systems.
-
-Examples include:
-
-- Healthcare Systems
-- Finance & Decision Systems
-- Aviation & Aerospace Safety
-- Robotics & Automation Oversight
-- Nuclear & High-Reliability Systems
-
-Domains are represented in:
-
-`matrices/cross-sector-mapping.csv`
-
-A domain mapping does not imply that two sectors are equivalent.
-
-The purpose of cross-sector analysis is to identify:
-
-- recurring structural mechanisms
-- analogous failure pathways
-- transferable questions
-- structural similarities
-- meaningful differences in how mechanisms operate under different constraints
-
-Cross-sector analysis must not collapse domain-specific context into a generic universal claim.
-
----
-
-## Cross-sector transfer
-
-A cross-sector mapping should distinguish the type of relationship between a mechanism and a domain expression.
-
-Current mapping relations include:
-
-- `direct`
-- `analogous`
-- `complementary`
-
-### Direct
-
-The domain expression closely corresponds to the canonical mechanism.
-
-### Analogous
-
-The domain expression exhibits a comparable structural pattern, but the mechanism should not be assumed to be identical in operational form.
-
-### Complementary
-
-The domain expression interacts with or informs the mechanism but should not be collapsed into it.
-
-This distinction exists to prevent false equivalence across sectors.
-
----
-
-## Analytical layers
-
-The architecture currently organizes material into recurring analytical layers including:
-
-### Organizational Sensing
-
-How organizations detect, surface, suppress, absorb, recognize, or miss emerging conditions.
 
 ### Interpretation
 
-How signals become meaningful or fail to become actionable knowledge.
+**Core question:**
+
+> What does the signal mean under actual organizational conditions?
+
+Relevant mechanisms:
+
+- `mechanism-004` — Interpretive Bottleneck
+- `mechanism-005` — Interpretive Fragmentation
+
+Relevant concepts:
+
+- `concept-006` — Structural Clarity
+- `concept-005` — Organizational Coherence Map
+- `concept-007` — Interpretive Failure Governance Systems
+
+---
 
 ### Escalation
 
-How conditions cross, fail to cross, or drift across thresholds for formal attention and action.
+**Core question:**
 
-### Decision Intelligence
+> When does the signal become actionable?
 
-How organizational decision processes respond to signals under uncertainty, compression, ambiguity, and competing demands.
+Relevant mechanism:
 
-### Intervention Architecture
+- `mechanism-006` — Escalation Threshold Drift
 
-How organizations use remaining response capacity, safeguards, controls, and intervention windows.
+Relevant concepts:
 
-### Failure Dynamics
-
-How initially bounded conditions propagate, interact, amplify, or cross containment boundaries.
-
-### Resilience & Adaptation
-
-How systems preserve operating capacity, recover, learn, and adapt.
-
-### Trust & Oversight
-
-How responsibility, supervision, human-machine relationships, governance, and oversight structures affect system behavior.
-
-### Cross-Sector Intelligence
-
-How structurally comparable mechanisms are identified across otherwise different domains.
-
-These layers are analytical lenses rather than mutually exclusive categories.
-
-A concept or mechanism may legitimately participate in more than one layer.
+- `concept-002` — Signal-to-Decision Gap
+- `concept-008` — Governance Diagnostic Degradation
 
 ---
 
-## Provenance architecture
+### Decision
 
-Every substantive concept, mechanism, mapping, and assessment construct should be traceable to a stable source identifier where appropriate.
+**Core question:**
 
-The canonical registry is:
+> Can the organization decide effectively before available options narrow?
 
-`sources/references.csv`
+Relevant mechanism:
 
-A source record contains:
+- `mechanism-007` — Decision Compression
 
-- stable source ID
-- title
-- source type
-- source role
-- canonical URL
-- canonical path
-- notes
-- status
+Relevant concepts:
 
-Other schemas should reference the source ID rather than repeatedly embedding URLs.
+- `concept-002` — Signal-to-Decision Gap
+- `concept-006` — Structural Clarity
+- `concept-011` — Adaptive Margin Architecture
+
+---
+
+### Intervention
+
+**Core question:**
+
+> Why does intervention arrive too late, or fail despite available safeguards?
+
+Relevant mechanisms:
+
+- `mechanism-008` — Risk Visibility Horizon
+- `mechanism-009` — Barrier Integrity
+
+Relevant concepts:
+
+- `concept-011` — Adaptive Margin Architecture
+- `concept-012` — Oversight Failure Convergence
+
+---
+
+### Recovery and Learning
+
+**Core question:**
+
+> Can experience become retained organizational capacity?
+
+Relevant mechanisms:
+
+- `mechanism-010` — Recovery Window
+- `mechanism-011` — Organizational Learning
+
+Relevant concepts:
+
+- `concept-005` — Organizational Coherence Map
+- `concept-011` — Adaptive Margin Architecture
+
+---
+
+# 3. Organizational Coherence Map
+
+## Purpose
+
+The Organizational Coherence Map examines relationships among:
+
+- interpretation
+- coordination
+- responsibility
+- information flow
+- decision authority
+- action
+
+It focuses on whether distributed parts of an organization can maintain sufficient structural coherence for coordinated action.
+
+## Core questions
+
+- Do different organizational actors construct compatible interpretations?
+- Where does information become fragmented?
+- Where are responsibilities unclear or disconnected?
+- Where are escalation pathways interrupted?
+- Where can coordination degrade?
+- Where does local optimization conflict with system-level visibility?
+- Where can operational activity remain functional while structural coherence deteriorates?
+- Where are governance structures becoming disconnected from operational reality?
+
+## Primary mechanisms
+
+- `mechanism-003` — Detection vs Recognition
+- `mechanism-004` — Interpretive Bottleneck
+- `mechanism-005` — Interpretive Fragmentation
+- `mechanism-006` — Escalation Threshold Drift
+- `mechanism-007` — Decision Compression
+- `mechanism-011` — Organizational Learning
+
+## Primary concepts
+
+- `concept-005` — Organizational Coherence Map
+- `concept-006` — Structural Clarity
+- `concept-007` — Interpretive Failure Governance Systems
+- `concept-008` — Governance Diagnostic Degradation
+
+---
+
+# Assessment dimensions
+
+The common assessment vocabulary is:
+
+| Dimension | Core question | Primary mechanism(s) |
+|---|---|---|
+| Sensing | What are we noticing — and what are we missing? | `mechanism-001`, `mechanism-002` |
+| Recognition | Has the significance of the signal been recognized? | `mechanism-003` |
+| Interpretation | What does the signal mean? | `mechanism-004`, `mechanism-005` |
+| Escalation | When does the signal become actionable? | `mechanism-006` |
+| Decision | Can the organization decide effectively under uncertainty? | `mechanism-007` |
+| Intervention | Why does intervention arrive too late? | `mechanism-008`, `mechanism-009` |
+| Recovery | Can sufficient recovery capacity remain available? | `mechanism-010` |
+| Trust & Oversight | Who is responsible for understanding and acting on what is seen? | `mechanism-009`, `mechanism-011` |
+| Organizational Learning | Does experience become structural adaptation? | `mechanism-011` |
+| Organizational Coherence | Can distributed actors maintain sufficient shared understanding for coordinated action? | `mechanism-005`, `mechanism-006`, `mechanism-007` |
+
+---
+
+# Assessment output model
+
+An assessment should not produce only a score or binary judgment.
+
+The preferred output is a structured representation of:
+
+1. **Observed condition**
+2. **Relevant signal**
+3. **Recognition state**
+4. **Interpretive state**
+5. **Escalation state**
+6. **Decision constraint**
+7. **Intervention horizon**
+8. **Barrier condition**
+9. **Recovery capacity**
+10. **Learning/adaptation condition**
+11. **Relevant structural mechanism(s)**
+12. **Evidence and provenance**
+13. **Uncertainty or evidence limitations**
+14. **Areas requiring additional investigation**
+
+This enables the assessment layer to connect directly to the research architecture.
+
+---
+
+# Assessment-to-architecture mapping
+
+Assessments should reference canonical entities through stable identifiers.
 
 For example:
 
-`source_id = N22`
+    assessment observation
+          ↓
+    mechanism-002
+          ↓
+    concept-010
+          ↓
+    N22
+          ↓
+    canonical Nieleze publication
 
-should resolve through:
+An assessment should not create an independent duplicate definition of a mechanism.
+
+Where an assessment encounters a mechanism already represented in the repository, it should reference that canonical mechanism.
+
+Where an assessment reveals a genuinely new mechanism or concept, that entity should first be evaluated for inclusion in the canonical ontology or mechanism schema.
+
+---
+
+# Evidence and provenance
+
+Assessment findings should distinguish between:
+
+- observed evidence
+- interpretation
+- structural inference
+- hypothesis
+- unresolved uncertainty
+
+A structural assessment should not present an inferred mechanism as a directly observed fact unless the evidence supports that claim.
+
+Where an assessment uses published Nieleze concepts or mechanisms, the corresponding source ID should be resolvable through:
 
 `sources/references.csv`
 
-to the canonical publication:
+---
 
-`/interpretation-layer/signal-suppression-dynamics`
+# Relationship to cross-sector intelligence
 
-This creates a provenance chain:
+Assessments may operate within a single domain or across domains.
 
-    research entity
-        ↓
-    stable source ID
-        ↓
-    canonical Nieleze publication
+When an assessment uses cross-sector transfer, it should identify the relevant mapping in:
 
-The repository should avoid treating a URL itself as the identity of a research entity.
+`matrices/cross-sector-mapping.csv`
+
+Cross-sector analogies should not be represented as universal equivalence.
+
+The assessment should preserve domain-specific context while identifying the structural mechanism being examined.
 
 ---
 
-## Source roles
+# Relationship to the Structural Lens
 
-The provenance layer distinguishes different roles played by published material.
+The Structural Lens may expose assessment concepts and pathways as navigational surfaces.
 
-Examples include:
+The Lens should not imply that a discovery interface itself constitutes an assessment.
 
-- Organization
-- Architecture
-- Applied systems
-- Assessment
-- Core concept
-- Mechanism
-- Structural model
-- Structural concept
-- Cross-sector architecture
-- Cross-sector intelligence
-- Methodology
-- Strategic foresight
-- Trust and oversight
-- Interpretation layer
-- Signal domain
+Where an assessment is substantive, the Lens should route users toward the relevant assessment application and authoritative Nieleze material.
 
-Source role describes what the source contributes to the architecture.
+Possible Lens pathways include:
 
-It does not by itself establish originality, authorship, or intellectual priority.
+    Concept
+      ↓
+    Mechanism
+      ↓
+    Assessment dimension
+      ↓
+    Relevant assessment
+      ↓
+    Canonical Nieleze source
 
----
+and:
 
-## Canonical publication boundary
-
-Nieleze.com remains the authoritative substantive publication layer.
-
-The GitHub artifact should not attempt to reproduce the complete text of canonical publications.
-
-The repository should instead represent:
-
-- structured concepts
-- mechanisms
-- relationships
-- mappings
-- metadata
-- provenance
-- analytical architecture
-
-The Lens should direct users to the relevant canonical publication when substantive explanation is required.
-
-This preserves a useful separation:
-
-    structured discovery
-          ↓
-    GitHub artifact
-          ↓
-    canonical Nieleze publication
-          ↓
-    substantive analysis
+    Domain
+      ↓
+    Cross-sector mapping
+      ↓
+    Mechanism
+      ↓
+    Assessment application
 
 ---
 
-## Lens architecture
+# Assessment boundaries
 
-The Nieleze Structural Lens is an interface over the Structural Risk Intelligence research architecture.
+Assessments are intended to support structural inquiry.
 
-It should consume or resolve against structured entities such as:
+They should not be represented as:
 
-- concepts
-- mechanisms
-- territories
-- relationships
-- domains
-- provenance records
+- universal predictors
+- deterministic failure forecasts
+- replacements for domain-specific expertise
+- substitutes for empirical investigation
+- evidence that a specific failure will occur
 
-The Lens should not become a second uncontrolled corpus.
+Assessment outputs should reflect uncertainty where evidence is incomplete.
 
-A Lens result should ideally be traceable through:
-
-    Lens surface
-        ↓
-    concept / mechanism / mapping
-        ↓
-    stable repository ID
-        ↓
-    source ID
-        ↓
-    canonical Nieleze publication
-
-This makes discovery auditable.
+The architecture is concerned with identifying structural conditions that may increase, constrain, amplify, or reduce the capacity for timely detection, interpretation, escalation, action, recovery, and adaptation.
 
 ---
 
-## Lens territories
+# Application principle
 
-Lens territories are persistent thematic surfaces used to organize navigation and interpretation.
+The assessment layer translates the broader Structural Risk Intelligence architecture into applied inquiry.
 
-Current territories include:
+The central principle remains:
 
-- Error Pathway
-- Organizational Sensing
-- Structural Dependence
-- Governance Failure
-- Cross-Sector Analysis
-- Ambiguity
-- Escalation
-- Organizational Learning
-- Interpretation
-- Human–Machine Oversight
+> The existence of information does not necessarily mean that an organization can recognize, interpret, escalate, and act on its significance before intervention space narrows.
 
-Territory membership is many-to-many.
-
-A mechanism or concept may belong to multiple territories when justified.
-
-Territories should not become substitutes for analytical layers.
-
-A territory is primarily an interface and discovery construct.
-
-An analytical layer is a conceptual classification.
+Assessments therefore examine the pathway from emerging condition to organizational response rather than treating visible failure as the starting point of analysis.
 
 ---
 
-## Stable identifiers
+# Architectural status
 
-Stable IDs are canonical references across the repository.
+The assessment schema is an application layer of the Nieleze Structural Risk Intelligence architecture.
 
-Examples:
+It should remain subordinate to:
 
-- `concept-010`
-- `mechanism-002`
-- `mapping-001`
-- `N22`
+- the canonical ontology
+- the mechanism architecture
+- the cross-sector mapping layer
+- the provenance registry
 
-Human-readable names and URLs may change.
-
-Stable IDs should change only when the underlying entity itself is determined to be a distinct entity.
-
-Renaming an entity should not require changing its ID.
+Assessment-specific adaptations may be introduced without changing the canonical architecture unless they reveal a genuinely new structural entity.
 
 ---
 
-## Naming and slug policy
+# Primary source
 
-Human-readable labels should be clear and publication-compatible.
-
-Slugs should:
-
-- use lowercase
-- use hyphens
-- avoid unnecessary abbreviations
-- remain stable where practical
-
-Examples:
-
-`signal-suppression`
-
-`decision-compression`
-
-`risk-visibility-horizon`
-
-Slugs are interface identifiers, not canonical entity identity.
-
----
-
-## Many-to-many relationships
-
-Where one entity may relate to multiple concepts or territories, the current CSV convention is:
-
-`|`
-
-Example:
-
-`concept-010|concept-002`
-
-or:
-
-`organizational-sensing|ambiguity|error-pathway`
-
-Commas remain reserved for CSV field separation.
-
-This convention must be retained unless the repository is migrated to a structured format such as JSON.
-
----
-
-## Repository versus website
-
-The repository and website serve different functions.
-
-### Nieleze.com
-
-Primary role:
-
-- substantive publication
-- explanatory content
-- cases
-- models
-- applied analysis
-- strategic interpretation
-- authoritative public source material
-
-### GitHub research architecture
-
-Primary role:
-
-- structured representation
-- schema
-- relationships
-- provenance
-- version history
-- machine-readable research artifact
-
-### Structural Lens
-
-Primary role:
-
-- exploration
-- discovery
-- relationship navigation
-- query interpretation
-- pathway exploration
-- routing users to substantive material
-
-The three surfaces should reinforce one another rather than duplicate one another.
-
----
-
-## Versioning
-
-Git history is the primary versioning mechanism for the research artifact.
-
-Changes should normally be made by editing and committing the canonical file rather than creating multiple files such as:
-
-- `concepts-v2.csv`
-- `concepts-final.csv`
-- `concepts-final-final.csv`
-
-Historical versions remain available through Git commit history.
-
-Schema-level changes may be recorded through a future repository manifest or schema version.
-
-Schema versions should describe structural compatibility, not merely each individual edit.
-
----
-
-## Validation principles
-
-As the repository develops, validation should enforce at minimum:
-
-1. Every referenced concept ID exists.
-2. Every referenced mechanism ID exists.
-3. Every referenced source ID exists.
-4. Every domain source ID resolves to a source record.
-5. Every canonical source URL is valid and intentionally curated.
-6. Every Lens territory referenced by an entity is defined.
-7. No duplicate stable IDs exist.
-8. Slugs are unique within their entity type.
-9. Required CSV fields are present.
-10. Multi-value fields use the repository delimiter convention.
-11. Cross-sector mappings identify their relationship type.
-12. Provenance does not silently point to unrelated or generic pages.
-13. Published entities do not rely on unpublished or missing source records.
-
-Validation should eventually be automated through repository checks.
-
----
-
-## Proprietary methodology boundary
-
-The research artifact is not intended to publish the complete proprietary Nieleze methodology.
-
-The repository may expose:
-
-- public terminology
-- public concepts
-- public structural relationships
-- public mechanisms
-- public mappings
-- public provenance
-- public analytical architecture
-
-The repository should not expose proprietary internal procedures unless intentionally published.
-
-Examples of potentially proprietary material include:
-
-- unpublished product methodology
-- internal scoring logic
-- proprietary decision rules
-- unpublished calibration procedures
-- internal synthesis procedures
-- non-public assessment logic
-- proprietary sequencing or operational playbooks
-
-Publication of a structural vocabulary does not imply publication of all methods used to derive or apply that vocabulary.
-
-Where a distinction is material, repository documentation should describe the public artifact as a representation of the published architecture rather than as a complete disclosure of the underlying methodology.
-
----
-
-## Licensing and reuse
-
-The repository should have an explicit license or rights statement.
-
-The license should clearly distinguish:
-
-1. rights granted over repository code and data
-2. rights granted over original research content
-3. rights and restrictions applying to the Nieleze website and publications
-4. material that remains proprietary and unpublished
-
-A repository license should not be interpreted as a blanket license to reproduce the complete Nieleze publication corpus or proprietary methodology.
-
-The final repository should include a dedicated `LICENSE` or rights document appropriate to the intended reuse model.
-
-Until that license is intentionally selected and committed, reuse rights should not be assumed beyond rights that apply by law.
-
----
-
-## Canonical direction of authority
-
-Where conflicts arise, the following order applies:
-
-1. Current authoritative Nieleze publication
-2. Current structured research artifact
-3. Lens presentation
-
-The Lens is an interface.
-
-The GitHub repository is the structured artifact.
-
-Nieleze publications are the substantive authority.
-
-A change in Lens presentation should not silently alter the underlying research architecture.
-
-A change in the research artifact should be traceable to its Git history and provenance.
-
-A change in substantive published research may require corresponding updates to the artifact.
-
----
-
-## Architectural invariants
-
-The following principles should remain stable as the repository evolves:
-
-### 1. Concepts are not mechanisms
-
-A concept names or frames an analytical entity.
-
-A mechanism describes behavior or process.
-
-### 2. Domains are not theories
-
-A domain is an application context.
-
-It does not create a new theoretical architecture merely because the expression differs.
-
-### 3. Mappings are not equivalence claims
-
-Cross-sector mappings identify structural correspondence or useful transfer.
-
-They do not assert that sectors are identical.
-
-### 4. Provenance is not decoration
-
-Sources should be resolvable and intentionally connected to the entities they support.
-
-### 5. The Lens is not the corpus
-
-The Lens should help users navigate the architecture without becoming an uncontrolled parallel publication system.
-
-### 6. Stable IDs matter more than names
-
-Names and URLs may evolve.
-
-Entity identity should remain stable wherever the underlying entity remains the same.
-
-### 7. Public architecture does not equal complete methodology disclosure
-
-The repository may expose a public structural representation while proprietary methods remain unpublished.
-
-### 8. Structural Risk Intelligence is the conceptual spine
-
-Concepts, mechanisms, mappings, assessments, and Lens surfaces should remain intelligible as parts of the broader Structural Risk Intelligence architecture rather than becoming disconnected standalone artifacts.
-
----
-
-## Intended end-state
-
-The mature architecture should support the following chain:
-
-    Nieleze
-        ↓
-    Structural Risk Intelligence
-        ↓
-    canonical concepts / mechanisms / relationships
-        ↓
-    cross-sector mappings
-        ↓
-    assessments / applications
-        ↓
-    Structural Lens territories
-        ↓
-    interactive exploration
-
-The same architecture should be usable by:
-
-- humans reading the repository
-- the Structural Lens
-- future APIs
-- graph visualizations
-- search and retrieval systems
-- research tooling
-- future analytical interfaces
-
-The repository should therefore remain structured enough to support new interfaces without requiring the underlying research architecture to be rebuilt for each interface.
+https://www.nieleze.com/
