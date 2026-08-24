@@ -1,10 +1,12 @@
 # Nieleze Research Architecture
 
-This repository documents the analytical architecture underlying **Nieleze's Structural Risk Intelligence** work.
+Nieleze identifies structural conditions that can create risk before they become visible as conventional organizational failure.
 
-Structural Risk Intelligence explores how organizations detect, interpret, escalate, and learn from emerging risk.
+**Structural Risk Intelligence** examines how organizations detect, interpret, escalate, and learn from emerging risk across complex systems.
 
-The research architecture looks across organizational sensing, interpretation, trust and oversight, failure dynamics, intervention, resilience, and decision intelligence, and examines how recurring structural mechanisms appear across different domains.
+This repository documents the analytical architecture underlying Nieleze's Structural Risk Intelligence work, including its analytical framework, taxonomy, ontology, structural mechanisms, assessment schema, cross-sector mappings, and provenance model.
+
+**Applied instruments:** Structural Risk Snapshot · Organizational Sensing Assessment · Organizational Coherence Map
 
 ## What This Repository Contains
 
