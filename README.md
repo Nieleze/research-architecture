@@ -107,6 +107,9 @@ This repository is a public research artifact representing the structure of Niel
 
 The **[Structural Lens](https://lens.nieleze.com/)** provides a public discovery interface for exploring relationships among the concepts, mechanisms, and structural territories represented in this research architecture. It is a discovery and routing layer; this repository and Nieleze remain the substantive research sources.
 
+The [**Nieleze Pulse**](https://pulse.nieleze.com/) provides a public sensing surface for current events, grouping public signals into structural conditions and routing them toward the relevant Lens territories. It is a discovery layer for recognizing structural questions in the current information environment; the repository, Lens, and Nieleze remain the substantive research sources.
+
+
 It is intended to make the relationships among concepts, mechanisms, domains, cases, and applied methodologies more explicit and inspectable.
 
 The repository does not claim that every term documented here was originated by Nieleze. Where appropriate, provenance distinguishes Nieleze terminology and frameworks from established concepts and external sources.
