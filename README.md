@@ -111,6 +111,8 @@ The **[Structural Lens](https://lens.nieleze.com/)** provides a public discovery
 
 The [**Nieleze Pulse**](https://pulse.nieleze.com/) provides a public sensing surface for current events, grouping public signals into structural conditions and routing them toward the relevant Lens territories. It is a discovery layer for recognizing structural questions in the current information environment; the repository, Lens, and Nieleze remain the substantive research sources.
 
+[**Signal Path**](https://www.nieleze.com/interactive/signal-path/) is an interactive reading surface for exploring a current Pulse signal: its source, date, and matched Structural Lens territories. It connects events in the information environment to the structural questions they may raise. Pulse supplies the signal; the Lens provides the territories; Nieleze and this repository remain the substantive research sources.
+
 The research architecture is also expressed through Nieleze's applied instruments: the Structural Risk Snapshot, Organizational Sensing Assessment, and Organizational Coherence Map. Together, these operationalize the research architecture for organizational inquiry and decision-making.
 
 It is intended to make the relationships among concepts, mechanisms, domains, cases, and applied methodologies more explicit and inspectable.
